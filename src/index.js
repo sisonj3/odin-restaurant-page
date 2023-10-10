@@ -1,5 +1,6 @@
 import homeContent from './init-load';
 import menuContent from './menu';
+import contactContent from './contact';
 
 const domElements = (() => {
     // Create list
@@ -21,7 +22,7 @@ const domElements = (() => {
     // Add event listeners to tabs
     homeTab.addEventListener('click', () => homeContent(contentDiv));
     menuTab.addEventListener('click', () => menuContent(contentDiv));
-    contactTab.addEventListener('click', () => console.log('contactTab clicked'));
+    contactTab.addEventListener('click', () => contactContent(contentDiv));
 
     // Add tabs to tabList
     tabList.appendChild(homeTab);
