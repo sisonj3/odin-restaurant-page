@@ -14,5 +14,14 @@ module.exports = {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
         clean: true,
+    },
+
+    module: {
+        rules: [
+            {
+                test: /\.(pnt|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
+            }
+        ]
     }
 };
